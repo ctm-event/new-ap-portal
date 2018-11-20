@@ -1,0 +1,13 @@
+{
+    "name": "stevennguyen/new-ap-portal",
+    "description": "Test Steven",
+    "type": "project",
+    "authors": [
+        {
+            "name": "stevennguyen",
+            "email": "steven.nguyen@contemi.com.vn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
