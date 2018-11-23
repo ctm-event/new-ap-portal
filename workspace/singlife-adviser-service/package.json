@@ -1,0 +1,29 @@
+{
+  "name": "singlife-new-adviser-portal",
+  "version": "1.0.0",
+  "description": "abcd",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/contemivn/singlife-adviser-need-analysis.git"
+  },
+  "keywords": [
+    "singlife-adviser-need-analysis"
+  ],
+  "author": "StevenNguyen",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/contemivn/singlife-adviser-need-analysis#readme",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "express": "^4.16.4",
+    "moment": "^2.22.2",
+    "mysql": "^2.16.0",
+    "orm": "^5.0.2",
+    "path": "^0.12.7",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  portal.node:
+    image: nguyenbaotrunghcmq9/node-base-image:latest
+    container_name: node${DOCKER_ENV_VERSION}
+    ports:
+      - "${WORKSPACE_HTTP_PORT}:3000"
+      - "${WORKSPACE_HTTPS_PORT}:443"
+    volumes:
+      - ./:/app
+    networks:
+      - pegasus-network
+    dns:
+      - 192.168.17.1
+      - 8.8.8.8
+    restart: always
+    command:  >
+          sh -c '
+            cd /app
+            npm install forever -g
+            forever -w /app/server.js
+            npm start
+          '
+networks:
+  pegasus-network:
+    external:
+      name: ${DOCKER_NETWORK}
